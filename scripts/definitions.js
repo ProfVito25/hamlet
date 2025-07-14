@@ -43,7 +43,7 @@ const QMAKE_SEND_WEBAPP = 4;
 const QMAKE_SEND_NODEJS = 5;
 const QMAKE_SEND_NODEJS_LOCAL = 6;  
 
-const QUIZ_KEYWORD = "BW&e@LQuJTlD#rqw";
+const QUIZ_KEYWORD = "X3nG7DP&hYwN3GO7";
 
 const USER_LOGIN_ANONYMOUS = "Anonymous";
 const USER_EMAIL_ANONYMOUS = "anonymous@anonymous.nowhere";
@@ -55,18 +55,18 @@ const RETRY_TIMEOUT = 2000;  // 2 seconds
 
 const options =
 {
-	name:"Hamlet",
+	name:"Hamlet Online",
 	title: "Hamlet",
 	description: "",
 	id: 0,
-	numOfQuestions: 20,
-	notValuatedQuestionsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-	noChoicePointsArray: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-	weightsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
-	maxtime: 3900, 
+	numOfQuestions: 101,
+	notValuatedQuestionsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,20],
+	noChoicePointsArray: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	weightsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,20],
+	maxtime: 1800, 
 	maxmark: 10,
 	minmark: 0,
-	roundmark: 0.25,
+	roundmark: 1,
 	questSlide: false,
 	lockRightAns: false,
 	computeMarkFnType: QMAKE_COMPUTE_MARK_BASIC,
@@ -75,9 +75,9 @@ const options =
 	verifyQuestBeforeNext: true,
 	verifyAtLeastOneChoice: false,
 	radioChoiceInsteadOkButton: false,
-	silentBeforeEndQuiz: true,
+	silentBeforeEndQuiz: false,
 	uniqueOkButton: true,
-	uniqueOkButtonPos: 'TOP',
+	uniqueOkButtonPos: 'BOTTOM',
 	showTimeout: true,
 	allowAbandonFromQuiz: false,
 	valuateAfterAbandon: false,
@@ -92,14 +92,14 @@ const options =
 	matchingLockLeftCol: false,
 	showFinalMark: true,
 	showFinalPoints: false,
-	markPercentage: false,
+	markPercentage: true,
 	showPrintButton: true,
 	showLinkButton: false,
 	clearAlwaysHistory: true,
 	disableRightClickMenu: true,
 	needSaveQuiz: true,
 	saveQuizMode: QMAKE_SEND_WEBAPP,
-	saveQuizUrl: "https://script.google.com/macros/s/AKfycbwwc-GbXqlWz46FiQIuYdcUGg6awsx_bAAv4Va6-qaICRZQW8k9W3ErG2-7e_KJuLEl/exec",
+	saveQuizUrl: "https://script.google.com/macros/s/AKfycbz8Bs_Vkbv16s1TGUXDlz3b5lg7mGLusxuoiwO-jvcd0reQqsDkKoUAqBKK26960eNA/exec",
 	allowRetakeQuiz: false,
 	maxNumRetake: 100,
 	upperMarkForRetake: 6,
@@ -109,10 +109,10 @@ const options =
 	reportNumOfColumns: 1,
 	hideTitleBar: false,
 	hideStatusBar: false,
-	includeProfile: true,
-	author: "VITO MAGGIO",
-	argument: "HAMLET",
-	company: "LICEO GALILEI-MORO - MANFREDONIA",
+	includeProfile: false,
+	author: "",
+	argument: "",
+	company: "",
 	quiz_date: "2025",
 	playSounds: false,
 	hasIntroText: false,
@@ -127,7 +127,7 @@ const options =
 	indicateOnlySelAns: false,
 	showUnansweredQuests: true,
 	htmlCharset: "Windows-1252",
-	htmlLanguage: "",
+	htmlLanguage: "it",
 	reportHideRevision: false,
 	lockQuestionAfterConfirm: false,
 	showEngagementRules: false,
